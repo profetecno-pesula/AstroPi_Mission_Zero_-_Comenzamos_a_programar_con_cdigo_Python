@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5. RETO 2: SENSORES | AstroPi Mission Zero - Comenzamos a Programar con código Python </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Ángela Bracho Núñez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">AstroPi Mission Zero - Comenzamos a Programar con código Python</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">AstroPi Mission Zero - Comenzamos a Programar con código Python</a></li>
+   <li><a href="1_antes_de_empezar.html" class="no-ch">1. Antes de empezar</a></li>
+   <li><a href="2_qu_es_un_astro_pi.html" class="no-ch">2. ¿Qué es un Astro Pi?</a></li>
+   <li><a href="3_comenzamos_en_trinket.html" class="no-ch">3. Comenzamos en Trinket</a></li>
+   <li><a href="4_reto_1_pet.html" class="no-ch">4. RETO 1: PET</a></li>
+   <li id="active"><a href="5_reto_2_sensores.html" class="active no-ch">5. RETO 2: SENSORES</a></li>
+   <li><a href="6_reto_final_cdigo_para_el_concurso.html" class="no-ch">6. RETO FINAL: Código para el concurso</a></li>
+   <li><a href="7_concluyamos.html" class="no-ch">7. Concluyamos</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="4_reto_1_pet.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>6</strong> de <strong>9</strong></span> <span class="sep">| </span><a href="6_reto_final_cdigo_para_el_concurso.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">5. RETO 2: SENSORES</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id49">
+<div class="iDevice emphasis0" >
+<div id="ta49_112_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Vamos a realizar nuestro segundo RETO.<img src="retor_adultos_conbocadillo.gif" title="Retor con bocadillo" style="float: left; margin-right: 10px; margin-left: 10px;" width="250" height="250"></p>
+<p style="text-align: justify;">Recuerda quetomaremos los datos ambientáles que hay en el interior de la <strong>ISS</strong>.</p>
+<p style="text-align: justify;">Para ello le vamos a sacar el máximo partido a nuestra AstroPi utilizando su <strong>Sense HAT</strong>.</p>
+<p style="text-align: justify;">¡Manos a la obra!</p></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_orientaciones" id="id50">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_orientaciones.svg)"><h1 class="iDeviceTitle">¿Qué es un Sense HAT?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta50_113_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>Necesitáis ayuda</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><strong>Sense HAT</strong> es una placa adicional para Raspberry Pi, hecha especialmente para la competencia&nbsp;Astro Pi&nbsp;.&nbsp;La placa le permite realizar mediciones de temperatura, humedad, presión y orientación, y generar información utilizando su matriz LED incorporada.</p>
+<p><img src="sense-hat.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="472" height="393"></p>
+<div class="exe-fx exe-accordion">
+<h2>Adjuntar un Sense HAT</h2>
+<p>Antes de conectar cualquier Sense HAT a su Raspberry Pi, asegúrese de que la Pi esté apagada.</p>
+<p style="text-align: center;"><img src="animated_sense_hat.gif" alt="" width="365" height="342"></p>
+<h2>Usando el emulador Sense HAT</h2>
+<p>Si no tiene acceso a un Sense HAT, puede usar el emulador.</p>
+<h3>Emulador Sense HAT en línea</h3>
+<p>Hay un emulador en línea que puede usar en su navegador para escribir y probar código para el Sense HAT.</p>
+<p><img src="sense-hat-trinket.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="600" height="330"></p>
+<ul>
+<li>Abre un navegador de Internet, vaya a <a href="https://trinket.io/sense-hat" target="_blank" rel="noopener">https://trinket.io/sense-hat</a> y elimine el código de demostración existente que se encuentra en el editor.</li>
+<li>Si desea guardar su trabajo, deberá <a href="https://trinket.io/welcome" target="_blank" rel="noopener">crear una cuenta gratuita</a> en el sitio web de Trinket.</li>
+</ul>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_tareagrupal" id="id52">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_tareagrupal.svg)"><h1 class="iDeviceTitle">Mostrar texto en el display</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta52_115_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Vamos a mostrar un texto en Astro Pi "HOLA MUNDO!!!" en la pantalla LED de Sense HAT.</p>
+<p style="text-align: justify;">Lo primero crearemos un proyecto en Trinket que se llame SENSORES, en la primera pestaña del archivo principal de Python tenemos una archivo que vamos a empezar a escribir que se llama main.py</p>
+<p style="text-align: justify;">Agregua este código para mostrar un mensaje en la matriz LED del Sense HAT.</p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>sense.show_message("HOLA MUNDO!!!")</code></pre>
+</div>
+</div>
+<p style="text-align: justify;">Prubébalo en Trinket presionando el botón RUN. <a href="#tf1775922-81d0-f86a-bb84-3ce47b41ea3e" id="linkf1775922-81d0-f86a-bb84-3ce47b41ea3e" class="exe-tooltip definition-tt">Truco</a>.</p>
+<p style="text-align: justify;">Vamos a utilizar parámetros adicionales en nuestro texto:</p>
+<div class="exe-fx exe-carousel">
+<h2>scroll_speed</h2>
+<p><strong><span style="background-color: #000000; color: #ffffff;">&nbsp;scroll_speed </span></strong>: afecta la rapidez con la que el texto se mueve por la pantalla.&nbsp;El valor predeterminado es&nbsp;0.1.&nbsp;Cuanto mayor sea el número, menor será la velocidad.</p>
+<h2>text_colour</h2>
+<p><span style="background-color: #000000; color: #ffffff;"><strong>&nbsp;text_colour</strong> </span>: altera el color del texto y se define a través de tres valores para especificar rojo, verde y azul.&nbsp;Estos también se denominan valores RGB.</p>
+<h2>back_colour</h2>
+<p><span style="color: #000000;"><strong><span style="background-color: #ffffff;">&nbsp;back_colour</span> </strong></span>: altera el color del fondo y funciona de la misma forma que&nbsp;text_colour.</p>
+<h2>Código con parámetros</h2>
+<p>Código que muestra nuestro texto:</p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>sense.show_message("¡Astro Pi es GENIAL!!!", text_colour=yellow, back_colour=blue, scroll_speed=0.05)</code></pre>
+</div>
+</div>
+<h2>Definir variables que necesitemos posteriormente</h2>
+<p>No olvides agregar las líneas de código que necesites&nbsp; en <strong>#variables </strong>como en el siguiente ejemplo:<strong><br></strong></p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>#variables
+blue = (0, 0, 255)
+yellow = (255, 255, 0)</code></pre>
+</div>
+</div>
+<h2>¿Dónde debemos añadir el código?</h2>
+<p>Puedes insertar la orden en un <strong>bucle infinito</strong>, igual que hacíamos en Scratch con la orden <strong>"por siempre"</strong>:</p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>#órdenes
+while True:
+  #Aquí vamos a añadir el código que muestra nuestro texto</code>Vamos a poner todo junto.</pre>
+</div>
+</div>
+</div>
+<p>Ponemos todo junto. Veamos este ejemplo de código de texto cambiándo sus parámetros de color de texto, color de fondo y su velocidad de desplazamiento:</p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>#Configuraciones iniciales
+from sense_hat import SenseHat
+from time import sleep
+sense = SenseHat()
+sense.set_rotation(0)
+
+#variables
+blue = (0, 0, 255)
+yellow = (255, 255, 0)
+
+#órdenes
+while True:
+  sense.show_message("¡Astro Pi es GENIAL!!!", text_colour=yellow, back_colour=blue, scroll_speed=0.05)</code></pre>
+</div>
+</div>
+<div class="exe-fx exe-accordion">
+<h2>Recordamos: <strong>Representar colores con números.</strong></h2>
+<p>El color de un objeto depende del color de la luz que <strong>refleja</strong> o <strong>emite</strong>.&nbsp;La luz puede tener diferentes longitudes de onda, y el color de la luz depende de la longitud de onda que tenga.&nbsp;El color de la luz según su longitud de onda se puede ver en el siguiente diagrama.&nbsp;Puede reconocer esto como los colores del arcoíris.</p>
+<p><img src="linear-visible-spectrum.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="800" height="152"></p>
+<p>Los humanos ven el color debido a células especiales en nuestros ojos.&nbsp;Estas células se llaman&nbsp;<strong>conos</strong>&nbsp;.&nbsp;Tenemos tres tipos de celdas cónicas, y cada tipo detecta luz roja, azul o verde.&nbsp;Por lo tanto, todos los colores que vemos son solo mezclas de los colores rojo, azul y verde.</p>
+<p><img src="additive-colour-mixing.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="800" height="600"></p>
+<h2>Colores RGB</h2>
+<p>En la mezcla de colores aditivos, se usan tres colores (rojo, verde y azul) para hacer otros colores.&nbsp;En la imagen de arriba, hay tres focos de igual brillo, uno para cada color.&nbsp;En ausencia de cualquier color el resultado es negro.&nbsp;Si se mezclan los tres colores, el resultado es blanco.&nbsp;Cuando el rojo y el verde se combinan, el resultado es amarillo.&nbsp;Cuando se combinan rojo y azul, el resultado es magenta.&nbsp;Cuando el azul y el verde se combinan, el resultado es cian.&nbsp;Es posible hacer incluso más colores variando el brillo de los tres colores originales utilizados.</p>
+<p>Las computadoras almacenan todo como 1 y 0.&nbsp;Estos 1 y 0 a menudo se organizan en conjuntos de 8, llamados&nbsp;<strong>bytes</strong>.</p>
+<p>Un solo&nbsp;<a href="#t8a33d330-6311-e1f3-a648-f1154524d6f7" id="link8a33d330-6311-e1f3-a648-f1154524d6f7" class="exe-tooltip definition-tt titled-tt" title="byte | byte">byte</a>&nbsp;puede representar cualquier número desde 0 hasta 255.</p>
+<center></center><center></center></div>
+<div id="tf1775922-81d0-f86a-bb84-3ce47b41ea3e" class="exe-tooltip-text">
+<p>Podemos anular esta línea de código poniendo delante un hastag (#) para probar la pieza de código por partes.</p>
+</div>
+<div id="t8a33d330-6311-e1f3-a648-f1154524d6f7" class="exe-tooltip-text">
+<p><img src="Moneda-bit-1.jpg" style="float: left; margin-right: 10px; margin-left: 10px;" width="300" height="225">¿Qué es 255? Ese es el máximo. ¿Y qué tiene que ver eso con el 255? Pues resulta que es el valor más alto del sistema decimal que puede traducirse a un binario de ocho dígitos. Es decir, el 0 del sistema decimal corresponde al 00000000 del binario y el 255 corresponde al 11111111.</p>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_pasos" id="id53">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_pasos.svg)"><h1 class="iDeviceTitle">Sintiendo el entorno con Sense HAT</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta53_116_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>El <strong>Sense HAT</strong> tiene un conjunto de sensores ambientales para detectar las condiciones del entorno;&nbsp;Puede medir la presión, la temperatura y la humedad.</p>
+<div class="exe-fx exe-paginated">
+<h2>Lectura de los sensores con el Sense HAT: Temperatura</h2>
+<p>En un archivo de Python main.py de Trinket, ingrese el siguiente código para medir <strong>la temperatura</strong>:</p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>#configuraciones iniciales
+from sense_hat import SenseHat
+sense = SenseHat()
+sense.clear()
+
+#variables
+temp = sense.get_temperature()
+temp = round (temp,1) #redondeamos a un decimal
+
+#órdenes
+print(temp)</code></pre>
+</div>
+</div>
+<p>Podemos ir módificando el Trinket con el slider la temperatura y vemos los valoes que se van imprimeiendo en las distintas situaciones.</p>
+<h2>Lectura de los sensores con el Sense HAT: Humedad</h2>
+<p>En un archivo de Python main.py de Trinket, ingrese el siguiente código para medir <strong>la humedad</strong>:</p>
+<p>#Configuraciones iniciales</p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>from sense_hat import SenseHat
+sense = SenseHat()
+sense.clear()
+
+#variables
+humidity = sense.get_pressure()
+humidity = round (humidity, 1) #redondeamos a un decimal
+
+#órdeces
+print(humidity)</code></pre>
+</div>
+</div>
+<p>Podemos ir módificando el Trinket con el slider la humedad y vemos los valoes que se van imprimeiendo en las distintas situaciones.</p>
+<p>Mostrar resultados en el display</p>
+<h2>Resultados en pantalla de texto</h2>
+<p>Vamos a crear una pantalla de texto desplazable que mantenga a las personas informadas sobre las lecturas actuales de temperatura y humedad.&nbsp;Puede usar el código de visualización de texto desplazable que escribió en el paso 'Mostrar texto' como ayuda.</p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>#Configuraciones iniciales
+from sense_hat import SenseHat
+sense = SenseHat()
+
+# Variables
+temp = sense.get_temperature()
+humidity = sense.get_humidity()
+
+temp = round(temp, 1)
+humidity = round(humidity, 1)
+message = "Temperature: " + str(temp) + " Humidity: " + str(humidity)
+  
+# Órdenes
+sense.show_message(message, scroll_speed=0.05)</code></pre>
+</div>
+</div>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_coproducciontxt" id="id54">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_coproducciontxt.svg)"><h1 class="iDeviceTitle">Añadimos una orden CONDICIONAL</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta54_117_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;"><img src="retor_adultos_conbocadillo.gif" alt="Rétor con bocadillo" title="Rétor con bocadillo" style="float: left; margin-right: 10px; margin-left: 10px;" width="200" height="200"></p>
+<p style="text-align: justify;">Vamos a añadir una orden condicional a nuestro código</p>
+<p style="text-align: justify;">¿Te acuerdas cuando hacíamos esto en Scartch si (CONDICIÒN) entonces (ORDEN QUE SE EJECUTA SI SE CUMPLE LA CONDICIÓN)?</p>
+<p style="text-align: justify;">La orden en Python es: if temp &gt; 40: en la siguiente línea Python necesita que el código esté <a href="#t98c770f2-cb8c-8b08-682e-cf653c251579" id="link98c770f2-cb8c-8b08-682e-cf653c251579" class="exe-tooltip definition-tt titled-tt" title="Indentación | Indentación">indentado</a> o remetido un par de espacios (si esto no lo hacemos bien tendremos un error que Trinket indicará señalándolo de color rojo.</p>
+
+<div id="t98c770f2-cb8c-8b08-682e-cf653c251579" class="exe-tooltip-text">
+<p><strong><img src="indentancion.jpg" style="float: left; margin-right: 10px; margin-left: 10px;" width="401" height="227">Indentación </strong></p>
+<p>¿Qué es una indentación Python?&nbsp;</p>
+<p>Python utiliza la <strong>indentación</strong> para delimitar la estructura permitiendo establecer bloques de código.</p>
+<p>En Python no existen comandos para finalizar las líneas ni llaves con las que delimitar el código. Los únicos delimitadores existentes son los dos puntos ( : ) y la <strong>indentación del código</strong>.</p>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_objetivos" id="id58">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_objetivos.svg)"><h1 class="iDeviceTitle">Pistas para añadir nuestra orden condicional</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta58_121_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-3"><h2><span class="sr-av">Clavis dice </span>¿Has terminado?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><strong>Vamos paso a paso:</strong></p>
+<div class="exe-fx exe-tabs">
+<h2>Paso 1:</h2>
+<p>Vamos a añadir estas variables a nuestro código:</p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>#Nuevas variables
+g = (240, 224,  45) #arena
+n = ( 20, 200, 200) #cielo
+a = (227, 250,  75) #sol
+w = (255, 255, 255) #blanco
+b = ( 54, 106, 226) #agua
+e = (176, 124,  33) #marron osculo
+o = (255,   0,  0) #rojo
+c = (100,100,100)
+y = (255,255,0)
+hot = [
+  n, n, n, n, n, a, a, n,
+  n, n, n, n, a, a, a, a,
+  n, n, n, n, n, a, a, n,
+  n, n, n, n, n, n, n, n,
+  n, n, n, n, n, n, n, n,
+  n, n, n, n, n, n, n, n,
+  g, g, g, g, g, g, g, g,
+  g, g, g, g, g, g, g, g
+]
+
+cold = [
+  n, n, w, n, n, n, w, n,
+  n, n, n, n, n, w, n, n,
+  n, w, n, n, n, n, n, w,
+  n, n, n, n, w, n, n, n,
+  w, n, n, w, n, n, w, n,
+  n, n, n, n, n, n, n, n,
+  w, w, w, w, w, w, w, w,
+  w, w, w, w, w, w, w, w
+]
+
+wet = [
+  b, b, b, b, b, b, b, b,
+  b, b, b, b, b, b, b, b,
+  b, o, b, o, o, o, b, b,
+  b, o, o, o, o, e, o, b,
+  b, o, o, o, o, o, o, b,
+  b, o, b, o, o, o, b, b,
+  b, b, b, b, b, b, b, b,
+  b, b, b, b, b, b, b, b
+]
+
+dry= [
+  c, c, g, g, c, c, c, c,
+  c, c, g, g, c, g, c, c,
+  g, c, g, g, c, g, c, c,
+  g, c, g, g, c, g, c, c,
+  g, g, g, g, g, g, c, c,
+  c, c, g, g, c, c, c, c,
+  y, y, y, y, y, y, y, y,
+  y, y, y, y, y, y, y, y
+]</code></pre>
+</div>
+</div>
+<h2>Paso 2:</h2>
+<p>Ahora te toca a ti, debes incluir dos condiciones una para la temperatura cuando asciende de 26.7 grados y humedad cuando para del 60 %.</p>
+<h2>Pista</h2>
+<p>Sintaxis para ambos casos:</p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>if temp &gt; 40.0:
+  #Visualizaremos hot
+  sleep(3)
+else:
+  #Visualizaremos could
+  sleep(3)
+
+if humidity &gt; [añadimos valor]:
+  #Visualizaremos wet
+else:
+  #Visualizaremos dry
+  sleep(3)</code></pre>
+</div>
+</div>
+<p>¿Por qué necesitamos las pausas en el primer if y no en el segundo if? [Reflexiona tu respuesta]</p>
+<p>¿Cuál era la temperatura máxima que debe haber el la ISS? ¿Está bien el ejemplo? [Corrige tu código]</p>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-1"><h2><span class="sr-av">Motus dice </span>¿Te has dado cuenta de la cantidad de cosas que has tenido que hacer para completar el reto?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><strong>Cuando realizamos tareas tan complejas,</strong> que integran muchos saberes <strong>es necesario aplicar conocimientos de varias asignaturas</strong> para realizarlo correctamente.</p>
+<p>Cuando nos esforzamos mucho <strong>nuestro trabajo es valorado por nuestros profes y familiares</strong>. Pero<strong> lo más importante es que nos sentimos muy contentos</strong> por el trabajo realizado.</p>
+<p><strong>Sigue así en los siguientes. Enhorabuena.</strong></p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="4_reto_1_pet.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>6</strong> de <strong>9</strong></span> <span class="sep">| </span><a href="6_reto_final_cdigo_para_el_concurso.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_adultos_js.js"></script></body></html>

@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3. Comenzamos en Trinket | AstroPi Mission Zero - Comenzamos a Programar con código Python </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Ángela Bracho Núñez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-3"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">AstroPi Mission Zero - Comenzamos a Programar con código Python</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">AstroPi Mission Zero - Comenzamos a Programar con código Python</a></li>
+   <li><a href="1_antes_de_empezar.html" class="no-ch">1. Antes de empezar</a></li>
+   <li><a href="2_qu_es_un_astro_pi.html" class="no-ch">2. ¿Qué es un Astro Pi?</a></li>
+   <li id="active"><a href="3_comenzamos_en_trinket.html" class="active no-ch">3. Comenzamos en Trinket</a></li>
+   <li><a href="4_reto_1_pet.html" class="no-ch">4. RETO 1: PET</a></li>
+   <li><a href="5_reto_2_sensores.html" class="no-ch">5. RETO 2: SENSORES</a></li>
+   <li><a href="6_reto_final_cdigo_para_el_concurso.html" class="no-ch">6. RETO FINAL: Código para el concurso</a></li>
+   <li><a href="7_concluyamos.html" class="no-ch">7. Concluyamos</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="2_qu_es_un_astro_pi.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>4</strong> de <strong>9</strong></span> <span class="sep">| </span><a href="4_reto_1_pet.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3. Comenzamos en Trinket</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id18">
+<div class="iDevice emphasis0" >
+<div id="ta18_120_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-2"><h2><span class="sr-av">Kardio dice </span>¿Ya has programado antes?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Probablemente ya hayas programado con programas de bloques de colores como <strong>Scratch</strong> ¡Vamos a dar un paso más!</p>
+<p>Hoy comenzaremos con nuestro primer código en Python, pero ....</p>
+<p><a href="#tc29fed99-600e-bf38-4f45-1609ac212240" id="linkc29fed99-600e-bf38-4f45-1609ac212240" title="Por qué Python | Por qué Python" class="exe-tooltip definition-tt titled-tt">¿Por qué Python?</a></p>
+<div id="tc29fed99-600e-bf38-4f45-1609ac212240" class="exe-tooltip-text">
+<p><img src="Python-por-que.jpg" style="float: left; margin-right: 10px; margin-left: 10px;" width="164" height="86">Es uno de los lenguajes de programación más versátiles que existen, puede ser usado en muchos campos diferentes. Es decir, permite programar desde videojuegos hasta aplicaciones móviles. <strong>Es fácil de aprender. Si comprendes Python, podrás entender más fácilmente otros lenguajes de programación.</strong></p>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Quieres que te ayude a comenzar a escribir tu primer código? (Clickea con el ratón)</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Lo primero que haremos es dibujar una mascota en el simulador de Python Trinket.</p>
+<p>Abra el&nbsp;proyecto inicial de Trinket: <a href="https://trinket.io/library/trinkets/d1196e05cb" target="_blank" rel="noopener">Pet</a></p>
+<p>Escribe las configuraciones iniciales para que el código se conecte a la Astro Pi, se asegura de que la pantalla LED del Astro Pi se muestre en el sentido correcto y podamos empezar a dibujar en nuestra <a href="#t40a38816-5ba2-2bb2-5bdb-3dce48b72745" id="link40a38816-5ba2-2bb2-5bdb-3dce48b72745" class="exe-tooltip definition-tt titled-tt" title="Matriz de LED | Matriz de LED">matriz de LED</a>.</p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code># Configuraciones iniciales
+from sense_hat import SenseHat
+from time import sleep
+sense = SenseHat()
+sense.set_rotation(0)</code></pre>
+</div>
+</div>
+<div id="t40a38816-5ba2-2bb2-5bdb-3dce48b72745" class="exe-tooltip-text">
+<p><img src="fu-pic.png" alt="" style="float: left; margin-right: 10px; margin-left: 10px;" width="244" height="176"></p>
+<p>Una <strong>matriz de LED</strong> es una cuadrícula de LED que se puede controlar individualmente o en grupo para crear diferentes efectos de iluminación. La matriz de LED del Sense HAT tiene 64 LEDES que se muestran en una <strong>cuadrícula de 8 x 8</strong>. Los LED son RGB (Red, Green and Blue) se pueden programar para producir una amplia gama de colores.</p>
+</div></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_pasos" id="id91">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_pasos.svg)"><h1 class="iDeviceTitle">Colores RGB</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta91_790_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Los colores se pueden crear usando diferentes proporciones de rojo, verde y azul.</p>
+<p>Cuando queremos representar un color en un programa de computadora, podemos hacerlo definiendo las cantidades de <span style="color: #ff0000;"><strong>rojo (R)</strong></span>, <span style="color: #339966;"><strong>verde (G)</strong></span> y <span style="color: #0000ff;"><strong>azul (B)</strong></span> que se combinan para formar ese color.&nbsp;Estas cantidades se almacenan como un número cuyo valor puede oscilar entre 0 y 255.</p>
+<p><img src="RGB.gif" alt="RGB" title="RGB" style="display: block; margin-left: auto; margin-right: auto;" width="405" height="242"></p>
+<p style="text-align: left;">Aquí hay una tabla que muestra algunos valores de color:</p>
+<table style="width: 34.4066%; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr>
+<td style="width: 8.80338%; text-align: left;"><span style="color: #ff0000;"><strong>Rojo (R)<br></strong></span></td>
+<td style="width: 8.15873%;"><strong><span style="color: #339966;">Verde (G)<br></span></strong></td>
+<td style="width: 8.96457%;"><span style="color: #0000ff;"><strong>Azul (B)<br></strong></span></td>
+<td style="width: 8.48104%;"><strong>Color</strong></td>
+</tr>
+<tr>
+<td style="width: 8.80338%;">255</td>
+<td style="width: 8.15873%;">0</td>
+<td style="width: 8.96457%;">0</td>
+<td style="width: 8.48104%;">Rojo</td>
+</tr>
+<tr>
+<td style="width: 8.80338%;">0</td>
+<td style="width: 8.15873%;">255</td>
+<td style="width: 8.96457%;">0</td>
+<td style="width: 8.48104%;">Verde</td>
+</tr>
+<tr>
+<td style="width: 8.80338%;">0</td>
+<td style="width: 8.15873%;">0</td>
+<td style="width: 8.96457%;">255</td>
+<td style="width: 8.48104%;">Azul</td>
+</tr>
+<tr>
+<td style="width: 8.80338%;">255</td>
+<td style="width: 8.15873%;">255</td>
+<td style="width: 8.96457%;">0</td>
+<td style="width: 8.48104%;">Amarillo</td>
+</tr>
+<tr>
+<td style="width: 8.80338%;">255</td>
+<td style="width: 8.15873%;">0</td>
+<td style="width: 8.96457%;">255</td>
+<td style="width: 8.48104%;">Magenta</td>
+</tr>
+<tr>
+<td style="width: 8.80338%;">0</td>
+<td style="width: 8.15873%;">255</td>
+<td style="width: 8.96457%;">255</td>
+<td style="width: 8.48104%;">Cian</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: left;"><br>Puedes encontrar un <strong>selector de color</strong> para jugar en <a href="https://www.w3schools.com/colors/colors_rgb.asp" target="_blank" rel="noopener">w3schools</a> .<br>La <strong>matriz LED</strong> es una cuadrícula de 8 x 8.&nbsp;Cada LED de la cuadrícula se puede configurar en un color diferente.&nbsp;Aquí hay una lista de variables para 24 colores diferentes.&nbsp;Cada color tiene un valor para rojo, verde y azul:</p>
+<div class="exe-fx exe-accordion">
+<h2>Lista de variables de color</h2>
+<p>Es interesante que este tipo de variables lo definamos con una sola letra, además este tipo de variables, que almacenan los valores de los colores RGB, se componen de tres valores, como ya hemos visto. Dichos valores pueden oscilar entre 0 y 255 (ten cuidado de no exceder este valor)</p>
+<p><img src="ambient-letters.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="712" height="267"></p>
+<p>main.py</p>
+<div class="highlighted-code code-style-2 language-python line-numbers">
+<div>
+<pre><code># Paleta de colores
+a = (255, 255, 255) # White
+b = (105, 105, 105) # DimGray
+c = (0, 0, 0) # Black
+d = (100, 149, 237) # CornflowerBlue
+e = (0, 0, 205) # MediumBlue
+f = (25, 25, 112) # MidnightBlue
+g = (0, 191, 255) # DeepSkyBlue
+h = (0, 255, 255) # Cyan
+j = (143, 188, 143) # DarkSeaGreen
+k = (46, 139, 87) # SeaGreen
+l = (0, 255, 127) # SpringGreen
+m = (34, 139, 34) # ForestGreen
+n = (154, 205, 50) # YellowGreen
+o = (128, 128, 0) # Olive
+p = (240, 230, 140) # Khaki
+q = (255, 255, 0) # Yellow
+r = (184, 134, 11) # DarkGoldenrod
+s = (139, 69, 19) # SaddleBrown
+t = (255, 140, 0) # DarkOrange
+u = (178, 34, 34) # Firebrick
+v = (255, 0, 0) # Red
+w = (255, 192, 203) # Pink
+y = (255, 20, 147) # DeepPink
+z = (153, 50, 204) # DarkOrchid</code></pre>
+</div>
+</div>
+</div>
+<h3>Elige una imagen</h3>
+<p>Antes de comenzar a diseñar nuestras propias imágenes, podemos practicar con las que aparecen a continuación.</p>
+<p>Elige una imagen de las opciones a continuación, para mostrar en la matriz de LED del <strong>senseHat</strong>. .&nbsp;Python almacena la información de una imagen en una lista o matriz de 64 valores.&nbsp;El código de cada imagen incluye las variables de color utilizadas y la lista tipo matriz.</p>
+<p>Deberá&nbsp;copiar&nbsp;todo el código de la imagen elegida y luego&nbsp;pegarlo&nbsp;en su proyecto debajo de la línea que dice&nbsp;<strong># Variables</strong>.</p>
+<div class="exe-fx exe-accordion">
+<h2>Pollo</h2>
+<p><img src="pollo.png" alt="" width="351" height="349"></p>
+<p>main.py</p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>a = (255, 255, 255) # White
+c = (0, 0, 0) # Black
+e = (0, 0, 205) # MediumBlue
+q = (255, 255, 0) # Yellow
+t = (255, 140, 0) # DarkOrange
+w = (255, 192, 203) # Pink
+
+image = [
+  c, c, c, q, q, q, c, c,
+  c, c, t, q, e, q, c, c,
+  c, c, c, q, q, q, c, c,
+  c, w, w, w, w, w, w, c,
+  c, w, a, a, a, a, w, c,
+  c, w, a, a, a, a, w, c,
+  c, c, w, a, a, w, c, c,
+  c, c, c, w, w, c, c, c]</code></pre>
+</div>
+</div>
+<h2>Flor</h2>
+<p><img src="flower.png" alt="" width="344" height="345"></p>
+<p>main.py</p>
+<div class="highlighted-code code-style-2 language-python line-numbers">
+<div>
+<pre><code>c = (0, 0, 0) # Black
+m = (34, 139, 34) # ForestGreen
+q = (255, 255, 0) # Yellow
+t = (255, 140, 0) # DarkOrange
+y = (255, 20, 147) # DeepPink
+
+image = [
+  c, c, y, y, y, y, c, c,
+  c, y, y, t, t, y, y, c,
+  y, y, t, q, q, t, y, y,
+  c, y, y, t, t, y, y, c,
+  c, c, y, y, y, y, c, c,
+  m, c, c, m, m, c, c, m,
+  c, m, m, m, m, m, m, c,
+  c, c, c, m, m, c, c, c]</code></pre>
+</div>
+</div>
+<h2>Cangrejo</h2>
+<p><img src="crab.png" alt="" width="346" height="347"></p>
+<p>main.py</p>
+<div class="highlighted-code code-style-2 language-python line-numbers">
+<div>
+<pre><code>a = (255, 255, 255) # White
+c = (0, 0, 0) # Black
+v = (255, 0, 0) # Red
+
+image = [
+  c, a, a, c, a, a, c, c,
+  c, a, c, c, a, c, c, c,
+  c, v, c, c, v, c, c, c,
+  c, v, c, c, v, c, c, c,
+  v, v, v, v, v, c, v, v,
+  v, v, c, c, v, v, v, c,
+  v, v, v, v, v, c, v, v,
+  v, c, v, c, v, c, c, c]</code></pre>
+</div>
+</div>
+<h2>Cocodrilo</h2>
+<p><img src="croc.png" alt="" width="344" height="345"></p>
+<p>main.py</p>
+<div class="highlighted-code code-style-2 language-python line-numbers">
+<div>
+<pre><code>a = (255, 255, 255) # White
+c = (0, 0, 0) # Black
+f = (25, 25, 112) # MidnightBlue
+m = (34, 139, 34) # ForestGreen
+
+image = [
+  m, m, m, m, m, c, c, c,
+  m, f, m, f, m, m, m, m,
+  m, m, m, m, m, m, m, m,
+  m, m, c, a, c, c, c, a,
+  m, m, c, c, c ,c ,c ,c,
+  m, m, c, c, c, a, c, c,
+  m, m, m, m, m, m, m, m,
+  m, m, m, m, m, m, m, m]</code></pre>
+</div>
+</div>
+<h2>Serpiente</h2>
+<p><img src="snake.png" alt="" width="346" height="346"></p>
+<p>main.py</p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>c = (0, 0, 0) # Black
+ m = (34, 139, 34) # ForestGreen
+ q = (255, 255, 0) # Yellow
+ v = (255, 0, 0) # Red
+
+image = [
+  c, c, c, c, c, c, c, m,
+  c, m, m, m, m, m, m, m,
+  c, m, c, c, c, c, c, c,
+  c, m, m, m, m, m, c, c,
+  c, c, c, c, c, m, c, c,
+  q, m, q, m, m, m, c, c,
+  m, m, m, c, c, c, c, c,
+  v, c, c, c, c, c, c, c]</code></pre>
+</div>
+</div>
+<h2>Rana</h2>
+<p><img src="frog.png" alt="" width="344" height="345"></p>
+<p>main.py</p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>c = (0, 0, 0) # Black
+m = (34, 139, 34) # ForestGreen
+q = (255, 255, 0) # Yellow
+v = (255, 0, 0) # Red
+
+image = [
+  c, m, m, m, c, m, m, m,
+  c, m, q, m, c, m, q, m,
+  m, m, m, m, m, m, m, m,
+  m, v, v, v, v, v, v, v,
+  m, m, m, m, m, m, m, m,
+  m, m, m, m, m, m, m, m,
+  m, m, m, m, m, m, m, m,
+  m, m, c, m, m, m, c, m]</code></pre>
+</div>
+</div>
+</div>
+<p>Busca:&nbsp;la línea que dice&nbsp;# Ordenes y agregua una línea de código para mostrar tu imagen en la matriz LED:</p>
+<p>principal.py</p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>#ordenes
+sense.set_pixels(image)</code></pre>
+</div>
+</div>
+<p>Presione <strong>RUN</strong> en la parte superior del editor para ver tu imagen, se mostrará en la matriz de LED.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_manipula" id="id22">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_manipula.svg)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta22_112_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-1"><h2><span class="sr-av">Motus dice </span>¿Te has sentido seguro en esta actividad?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Cuando tenemos que hacer alguna actividad podemos tener dudas sobre si seremos capaces de hacerlo.&nbsp;</p>
+<p style="text-align: justify;"><strong>Para poder vencer a estos miedos</strong> en las nuevas actividades que tengas que hacer sigue estos consejos:</p>
+<ol>
+<li style="text-align: justify;"><strong>Hay cosas que haces muy bien.</strong> Úsalas para hacer la actividad.&nbsp;</li>
+<li style="text-align: justify;"><strong>Hay cosas que te cuestan un poco hacerlas</strong>. Inténtalo y cree en ti mismo o en ti misma. Seguro que te sorprende lo que puedes conseguir.&nbsp;</li>
+<li style="text-align: justify;"><strong>Hay cosas que son muy difíciles.</strong> Fíjate en algún ejemplo, pregunta a tu compañero o compañera. Pide ayuda a tu profe.</li>
+</ol></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="2_qu_es_un_astro_pi.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>4</strong> de <strong>9</strong></span> <span class="sep">| </span><a href="4_reto_1_pet.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_adultos_js.js"></script></body></html>
